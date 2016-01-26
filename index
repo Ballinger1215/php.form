@@ -1,0 +1,95 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+
+<title>Mark Bollinger: index</title>
+
+<style type="text/css">
+
+
+
+
+#wrapper {
+	height: 960px;
+	background-color: #999;
+}
+#header {
+	text-align: center;
+	height: 40px;
+	background-color: #FFF;
+}
+#menu {
+	text-align: center;
+	background-color: #CCC;
+}
+#sidebar {
+	float: left;
+	padding: 5px;
+	margin: 5px;
+	width: 110px;
+	background-color: #CCC;
+}
+#content {
+	float: right;
+	margin: 5px;
+	padding: 5px;
+	width: 400px;
+	background-color: #CCC;
+}
+#footer {
+	clear: both;
+	background-color: #CCC;
+	text-align: center;
+}
+#nav, #nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#nav a {
+	display: block;
+	width: 10em;
+}
+
+#nav li {
+	float: left;
+	width: 10em;
+}
+#nav li ul {
+	position: absolute;
+	width: 10em;
+	left: -999em;
+}
+
+#nav li:hover ul {
+	left: auto;
+}
+
+</style>
+</head>
+<body>
+ <div id="wrapper">
+ 
+<div id="header"> Header </div>
+
+<div id="menu"><ul id="nav">
+	<li><a href="index.php">Home</a></li>
+    <li><a href="register_form.php">Register</a></li>
+	<li><a href="login.php">Login</a></li>
+	
+
+</ul> 
+</div>
+
+<div id="sidebar">sidebar stuff</div>
+
+<div id="content">where all the good stuff goes</div>
+
+<div id="footer"> Footer </div>
+
+</div>
+
+
+</body>
+</html>
