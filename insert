@@ -1,0 +1,61 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+</head>
+<body> 
+
+<?php
+$con=mysqli_connect("markbollinger.com","peter","abc123", "my_db");
+// Check connection
+if (mysqli_connect_errno()) {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+
+// Create database
+$sql="CREATE DATABASE my_db";
+if (mysqli_query($con,$sql)) {
+  echo "Database my_db created successfully";
+} else {
+  echo "Error creating database: " . mysqli_error($con);
+}
+?>
+
+<?php
+$con=mysqli_connect("markbollinger.com/login","peter","abc123","my_db");
+// Check connection
+if (mysqli_connect_errno()) {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+
+// Create table
+$sql="CREATE TABLE login(UserName CHAR(40),Password CHAR(40))";
+
+// Execute query
+if (mysqli_query($con,$sql)) {
+  echo "Table login created successfully";
+} else {
+  echo "Error creating table: " . mysqli_error($con);
+}
+?>
+
+<?php
+$con=mysqli_connect("markbollinger.com/register_form","peter","abc123","my_db");
+// Check connection
+if (mysqli_connect_errno()) {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+
+// Create table
+$sql="CREATE TABLE register(Name CHAR(50),Email CHAR(50),Address CHAR(50), Phone_number INT(11), State CHAR(2), Gender CHAR(5))";
+
+// Execute query
+if (mysqli_query($con,$sql)) {
+  echo "Table register created successfully";
+} else {
+  echo "Error creating table: " . mysqli_error($con);
+}
+?>
+
+
+</body>
+</html>
